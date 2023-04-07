@@ -1,0 +1,30 @@
+DELETE http://localhost:4500/cars/1
+Accept: application/json
+
+###
+PUT http://localhost:4500/cars/2
+Content-Type: application/json
+
+{
+  "name_car": "Mitsubishi new model",
+  "type" : "z-192"
+}
+
+###
+GET http://localhost:4500/cars/2
+Accept: application/json
+
+###
+POST http://localhost:4500/cars
+Content-Type: application/json
+
+{
+  "name_car": "Mitsubishi",
+  "type" : "z-19"
+}
+
+###
+GET http://localhost:4500/cars
+Accept: application/json
+
+###
